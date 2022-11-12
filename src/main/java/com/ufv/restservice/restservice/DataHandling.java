@@ -16,4 +16,12 @@ public class DataHandling {
 
         return foundUser;
     }
+
+    ArrayList<User> addUser (User newUser){
+        JsonReader reader = new JsonReader();
+        ArrayList<User> userList = reader.readJsonFile("./src/main/resources/users.json");
+        userList.add(newUser);
+        reader.writeJsonFile("./src/main/resources/users.json", userList);
+        return userList;
+    }
 }

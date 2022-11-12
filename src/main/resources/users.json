@@ -15,5 +15,15 @@
       "Member"
     ],
     "admin": false
+  },
+  {
+    "name": "Roy Fielding",
+    "email": "roy.fielding@legend.com",
+    "roles": [
+      "Member",
+      "Admin",
+      "DemiGod"
+    ],
+    "admin": true
   }
 ]
